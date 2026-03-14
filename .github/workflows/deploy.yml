@@ -19,10 +19,10 @@ jobs:
         with:
           username: ${{ secrets.SFTP_USERNAME }}
           server: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
+          port: 22
           password: ${{ secrets.SFTP_PASSWORD }}
           local_path: './*'
-          remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
+          remote_path: '/home/USERNAME/DOMAIN'   # <-- update this
           sftp_only: true
           # Exclude git/CI files from upload
           args: '--exclude=.git* --exclude=.github'
