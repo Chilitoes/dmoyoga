@@ -22,7 +22,7 @@ jobs:
           port: 22
           password: ${{ secrets.SFTP_PASSWORD }}
           local_path: './*'
-          remote_path: '/home/USERNAME/DOMAIN'   # <-- update this
+          remote_path: '/home/dh_3v4k8t/DOMAIN'   # <-- replace DOMAIN with your domain folder (e.g. dmoyoga.com)
           sftp_only: true
           # Exclude git/CI files from upload
           args: '--exclude=.git* --exclude=.github'
